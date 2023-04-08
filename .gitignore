@@ -1,0 +1,6 @@
+#ides
+.idea/
+.vscode/
+
+*.ini
+db/*
