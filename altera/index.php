@@ -1,6 +1,4 @@
 <?php 
-error_reporting(E_ALL);
-echo getenv('DB_PATH');
 require_once("src/conexao_miautomec.php");
 session_start();
 ?>
