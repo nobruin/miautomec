@@ -4,11 +4,10 @@ services:
   app:
     build: ./docker/
     ports:
-      - "8080:80"
+      - "80:80"
     volumes:
-      - ./altera/:/var/www/html
-      - ../db:/db
+      - ./www/:/var/www/html      
     environment:
-      - DB_PATH=192.168.43.121:C:\DB\MIAUTOMEC.FDB
+      - DB_PATH= 172.21.176.1:C:/administracao/db/MIAUTOMEC.FDB
       - DB_USER=SYSDBA
       - DB_PASSWORD=masterkey
